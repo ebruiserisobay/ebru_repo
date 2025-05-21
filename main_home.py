@@ -19,15 +19,15 @@ st.markdown("""
     .banner {
         position: relative;
         width: 100%;
-        max-width: 100%;  # Maksimum genişlik olarak %100 ayarlandı
-        overflow: hidden;  # Taşmayı gizlemek için eklendi
+        max-width: 100%;  /* Maksimum genişlik olarak %100 ayarlandı */
+        overflow: hidden;  /* Taşmayı gizlemek için eklendi */
         border-radius: 10px;
         text-align: center;
-        display: block;  # Blok olarak ayarlandı
-        margin: 0 auto;  # Ortaya hizalama
+        display: block;  /* Blok olarak ayarlandı */
+        margin: 0 auto;  /* Ortaya hizalama */
     }
     .banner img {
-        width: 100%;  # Genişliği %100 ayarlandı
+        width: 100%;  /* Genişliği %100 ayarlandı */
         height: auto;
         border-radius: 10px;
     }
@@ -36,20 +36,20 @@ st.markdown("""
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: #FFD700;  # Metin rengini beyaz olarak ayarlandı
-        background-color: rgba(0, 0, 0, 0.5);  # Yarı saydam siyah bir arka plan
-        padding: 20px;  # Dolgu miktarı artırıldı
-        border-radius: 10px;  # Kenar yuvarlama eklendi
-        text-align: center;  # Metin hizalaması ortalandı
+        color: #FFD700;  /* Metin rengini beyaz olarak ayarlandı */
+        background-color: rgba(0, 0, 0, 0.5);  /* Yarı saydam siyah bir arka plan */
+        padding: 20px;  /* Dolgu miktarı artırıldı */
+        border-radius: 10px;  /* Kenar yuvarlama eklendi */
+        text-align: center;  /* Metin hizalaması ortalandı */
     }
     .banner .text h1 {
-        margin: 0;  # Başlık için varsayılan margin sıfırlandı
-        font-size: 2em;  # Başlık boyutu ayarlandı
-        color: #FFD700;  # Başlık rengini pastel sarı olarak ayarlandı
+        margin: 0;  /* Başlık için varsayılan margin sıfırlandı */
+        font-size: 2em;  /* Başlık boyutu ayarlandı */
+        color: #FFD700;  /* Başlık rengini pastel sarı olarak ayarlandı */
     }
     .banner .text p {
-        margin-top: 10px;  # Paragraf üstüne boşluk eklendi
-        font-size: 1.2em;  # Paragraf boyutu ayarlandı
+        margin-top: 10px;  /* Paragraf üstüne boşluk eklendi */
+        font-size: 1.2em;  /* Paragraf boyutu ayarlandı */
     }
     </style>
     """, unsafe_allow_html=True)
@@ -176,8 +176,6 @@ custom_css = """
 
 # Apply custom CSS
 st.markdown(custom_css, unsafe_allow_html=True)
-
-import streamlit as st
 
 # Create columns for the activity cards
 col1, col2, col3, col4, col5 = st.columns(5)
